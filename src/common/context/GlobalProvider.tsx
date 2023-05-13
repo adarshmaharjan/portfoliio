@@ -1,5 +1,5 @@
 import { FC, createContext, useState } from 'react';
-import { ChildrenPropsType } from './types';
+import { ChildrenPropsType } from '../types';
 
 export type GlobalContextType = {
   darkTheme: boolean;
