@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { GlobalContext } from './common/context/GlobalProvider';
 import Header from './component/header/Header';
 import { ThemeProvider } from './common/context/ThemeProvider';
@@ -9,7 +9,9 @@ import Footer from './component/footer/Footer';
 
 const App: React.FC = () => {
   const [darkTheme, setDarkTheme] = useState<boolean>(false);
-
+  useEffect(() => {
+    document.title = 'Portfolio';
+  }, []);
   return (
     <>
       <GlobalContext.Provider
