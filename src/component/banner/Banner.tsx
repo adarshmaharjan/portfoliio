@@ -3,7 +3,7 @@ import SocialMediaIconList from '../socialMedia/SocialMediaIconList';
 const Banner: React.FC = () => {
   return (
     <>
-      <section className="bg-base-200 mt-16 min-h-[calc(100vh-64px)]">
+      <section id="home" className="bg-base-200 mt-16 min-h-[calc(100vh-64px)]">
         <div className="container mx-auto">
           <div className="hero min-h-[calc(100vh-64px)]">
             <div className="hero-content text-center ">
@@ -14,7 +14,9 @@ const Banner: React.FC = () => {
                   to utilizing my skills to further the company's mission and am proficient in various platforms,
                   languages, and embedded systems.
                 </p>
-                <button className="btn btn-primary">Hire Me</button>
+                <a href="#footer">
+                  <button className="btn btn-primary">Hire Me</button>
+                </a>
 
                 <div className="max-w-sm mx-auto">
                   <SocialMediaIconList />

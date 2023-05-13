@@ -3,7 +3,7 @@ import { profileImg } from '../../common/images';
 
 const About: FC = () => {
   return (
-    <section>
+    <section id="about">
       <div className="hero min-h-[calc(100vh-64px)] bg-base-300">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img alt="profile" src={profileImg} className="max-w-sm rounded-lg shadow-2xl" />
