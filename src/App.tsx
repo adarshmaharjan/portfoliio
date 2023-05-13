@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { GlobalContext } from './common/GlobalProvider';
 import Header from './component/header/Header';
 import { ThemeProvider } from './common/ThemeProvider';
-import Banner from './component/Banner/Banner';
+import Banner from './component/banner/Banner';
 
 const App: React.FC = () => {
   const [darkTheme, setDarkTheme] = useState<boolean>(false);
@@ -17,7 +17,7 @@ const App: React.FC = () => {
       >
         <ThemeProvider>
           <Header />
-          <main className="mt-16">
+          <main className="mt-16 font-body">
             <Banner />
           </main>
           <footer></footer>
