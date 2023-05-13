@@ -1,9 +1,30 @@
-import React from "react";
+import React, { useState } from 'react';
+import { GlobalContext } from './common/GlobalProvider';
+import Header from './component/header/Header';
+import { ThemeProvider } from './common/ThemeProvider';
+import Banner from './component/Banner/Banner';
 
-// const App: React.FC = () => {
-//   return <div>App</div>;
-// };
-function App(): ReturnType<React.FC> {
-  return <div>App</div>;
-}
+const App: React.FC = () => {
+  const [darkTheme, setDarkTheme] = useState<boolean>(false);
+
+  return (
+    <>
+      <GlobalContext.Provider
+        value={{
+          darkTheme,
+          toggleDarkTheme: () => setDarkTheme(!darkTheme),
+        }}
+      >
+        <ThemeProvider>
+          <Header />
+          <main className="mt-16">
+            <Banner />
+          </main>
+          <footer></footer>
+        </ThemeProvider>
+      </GlobalContext.Provider>
+    </>
+  );
+};
+
 export default App;
