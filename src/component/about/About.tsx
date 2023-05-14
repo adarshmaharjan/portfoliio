@@ -3,10 +3,10 @@ import { profileImg } from '../../common/images';
 
 const About: FC = () => {
   return (
-    <section id="about">
+    <section id="about" title="about">
       <div className="hero min-h-[calc(100vh-64px)] bg-base-300">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <img alt="profile" src={profileImg} className="max-w-sm rounded-lg shadow-2xl" />
+          <img alt="profile" src={profileImg} className="max-w-full sm:max-w-sm rounded-lg shadow-2xl" />
           <div>
             <h1 className="text-5xl font-header font-bold">About</h1>
             <p className="py-6 prose prose-slate">

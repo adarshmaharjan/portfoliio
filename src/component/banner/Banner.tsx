@@ -1,9 +1,10 @@
 import React from 'react';
 import SocialMediaIconList from '../socialMedia/SocialMediaIconList';
+import { Link } from 'react-scroll';
 const Banner: React.FC = () => {
   return (
     <>
-      <section id="home" className="bg-base-200 mt-16 min-h-[calc(100vh-64px)]">
+      <section id="home" title="home" className="bg-base-200 mt-16 min-h-[calc(100vh-64px)]">
         <div className="container mx-auto">
           <div className="hero min-h-[calc(100vh-64px)]">
             <div className="hero-content text-center ">
@@ -14,9 +15,10 @@ const Banner: React.FC = () => {
                   to utilizing my skills to further the company's mission and am proficient in various platforms,
                   languages, and embedded systems.
                 </p>
-                <a href="#footer">
+
+                <Link to="footer" smooth={true} duration={400}>
                   <button className="btn btn-primary">Hire Me</button>
-                </a>
+                </Link>
 
                 <div className="max-w-sm mx-auto">
                   <SocialMediaIconList />
