@@ -3,7 +3,7 @@ import SocialMediaIconList from '../socialMedia/SocialMediaIconList';
 const Banner: React.FC = () => {
   return (
     <>
-      <section id="home" className="bg-base-200 mt-16 min-h-[calc(100vh-64px)]">
+      <section id="home" title="home" className="bg-base-200 mt-16 min-h-[calc(100vh-64px)]">
         <div className="container mx-auto">
           <div className="hero min-h-[calc(100vh-64px)]">
             <div className="hero-content text-center ">
