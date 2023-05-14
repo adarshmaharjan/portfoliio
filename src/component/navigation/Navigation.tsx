@@ -3,7 +3,7 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 
 const Navigation: React.FC = () => {
   const offsetValue = -64;
-  const scrollDuration = 100;
+  const scrollDuration = 400;
   return (
     <div className="flex-none">
       <ul className="menu menu-horizontal px-1">
@@ -18,7 +18,14 @@ const Navigation: React.FC = () => {
           </Link>
         </li>
         <li>
-          <Link activeClass="active" to="services" spy={true} smooth={true} offset={offsetValue} duration={scrollDuration}>
+          <Link
+            activeClass="active"
+            to="services"
+            spy={true}
+            smooth={true}
+            offset={offsetValue}
+            duration={scrollDuration}
+          >
             Services
           </Link>
         </li>

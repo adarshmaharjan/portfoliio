@@ -1,5 +1,6 @@
 import React from 'react';
 import SocialMediaIconList from '../socialMedia/SocialMediaIconList';
+import { Link } from 'react-scroll';
 const Banner: React.FC = () => {
   return (
     <>
@@ -14,9 +15,10 @@ const Banner: React.FC = () => {
                   to utilizing my skills to further the company's mission and am proficient in various platforms,
                   languages, and embedded systems.
                 </p>
-                <a href="#footer">
+
+                <Link to="footer" smooth={true} duration={400}>
                   <button className="btn btn-primary">Hire Me</button>
-                </a>
+                </Link>
 
                 <div className="max-w-sm mx-auto">
                   <SocialMediaIconList />
